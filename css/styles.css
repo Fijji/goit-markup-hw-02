@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Roboto', 'Raleway';
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+:root {
+    --iris: #4d5ae5;
+    --ocean: #404bbf;
+    --navy-blue: #2e2f42;
+    --green: #31d0aa;
+    --slate: #434455;
+    --light-slate: #8e8f99;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --navy-blue-modal: rgba(46, 47, 66, 0.4);
+    --grey: rgba(46, 47, 66, 0.7);
+    --white: #fff;
+    --dairy: #fcfcfc;
+    --normal: #9747FF;
+    --primary-font: "Roboto", sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+}
+
+button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--iris);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    letter-spacing: 0.04em;
+}
+
+button:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--ocean);
+}
+
+header {
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--cornflower);
+    background: var(--white);
+    width: 1440px;
+    height: 72px;
+}
+
+.logo {
+    font-family: var(--logo-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+header nav ul {
+    width: 261px;
+    height: 24px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+header address ul li {
+    color: var(--slate);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+header address ul li:nth-child(1) {
+    /* info@devstudio.com */
+    position: absolute;
+    width: 153px;
+    height: 24px;
+    left: 940px;
+    right: 347px;
+    top: 24px;
+    bottom: 24px;
+}
+
+header address ul li:nth-child(2) {
+    /* +11 (000) 111-11-11 */
+    position: absolute;
+    width: 151px;
+    height: 24px;
+    left: 1133px;
+    right: 156px;
+    top: 24px;
+    bottom: 24px;
+}
+
+a {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    color: var(--iris);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu a {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    cursor: pointer;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+}
+
+address {
+    font-style: normal;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+address li:hover {
+    color: var(--ocean);
+}
+
+address li:active {
+    font-weight: 400;
+}
+
+.team {
+    text-align: center;
+}
+
+.filter a {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    cursor: pointer;
+}
+
+.filter a:hover,
+.filter a:active {
+    color: var(--iris);
+    text-decoration: none;
+}
+
+.li {
+    color: var(--slate);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+footer {
+    color: var(--cloud);
+    background-color: var(--navy-blue)
+}
+
+footer p {
+    color: var(--cloud);
+}
