@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto', 'Raleway';
-    src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap');
     font-style: normal;
     font-display: swap;
     font-weight: 400;
@@ -24,33 +24,6 @@
     --logo-font: 'Raleway', sans-serif;
 }
 
-button {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: var(--iris);
-    color: var(--white);
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 16px 32px;
-    letter-spacing: 0.04em;
-}
-
-button:hover {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: var(--ocean);
-}
-
-header {
-    box-sizing: border-box;
-    border-bottom: 1px solid var(--cornflower);
-    background: var(--white);
-    width: 1440px;
-    height: 72px;
-}
-
 .logo {
     font-family: var(--logo-font);
     font-weight: 800;
@@ -65,47 +38,123 @@ header {
     text-decoration: none;
 }
 
-header nav ul {
-    width: 261px;
-    height: 24px;
-    font-family: var(--primary-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+header .logo span {
     color: var(--navy-blue);
 }
 
-header address ul li {
-    color: var(--slate);
+footer .logo span {
+    color: var(--white);
+}
+
+.menu a {
     font-family: var(--primary-font);
+    font-weight: 500;
     font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    cursor: pointer;
+}
+
+.menu a:hover,
+:focus {
+    color: var(--ocean);
+}
+
+.contacts ul li a {
+    color: var(--slate);
+    font-style: normal;
+    font-family: var(--primary-font);
     font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 2%;
-    text-align: left;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    cursor: pointer;
 }
 
-header address ul li:nth-child(1) {
-    /* info@devstudio.com */
-    position: absolute;
-    width: 153px;
-    height: 24px;
-    left: 940px;
-    right: 347px;
-    top: 24px;
-    bottom: 24px;
+.contacts ul li a:hover {
+    color: var(--ocean);
 }
 
-header address ul li:nth-child(2) {
-    /* +11 (000) 111-11-11 */
+.contacts ul li a:active {
+    font-weight: 400;
+}
+
+.team {
+    text-align: center;
+}
+
+.filter a {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    /* color: var(--navy-blue); */
+    cursor: pointer;
+}
+
+.filter a:hover,
+.filter a:active {
+    color: var(--iris);
+    text-decoration: none;
+}
+
+.portfolio-hidden {
     position: absolute;
-    width: 151px;
-    height: 24px;
-    left: 1133px;
-    right: 156px;
-    top: 24px;
-    bottom: 24px;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-section {
+    background-color: var(--navy-blue);
+    text-align: center;
+}
+
+.main-section h1 {
+    color: var(--white);
+}
+
+.main-section button {
+    color: var(--cloud);
+    background-color: var(--ocean);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--iris);
+    border: 0px;
+}
+
+.main-section button:hover {
+    color: var(--ocean);
+    background-color: var(--cloud);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--cloud);
+    color: var(--iris);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    letter-spacing: 0.04em;
+}
+
+button:hover,
+:focus {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--ocean);
+    color: var(--cornflower);
 }
 
 a {
@@ -117,10 +166,6 @@ a {
     text-decoration: none;
     text-decoration-skip-ink: none;
     color: var(--iris);
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 a:active {
@@ -136,70 +181,50 @@ li {
     list-style-type: none;
 }
 
-.menu a {
+h1 {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+h2 {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    /* text-align: center; */
+    color: var(--navy-blue);
+}
+
+h3 {
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+body {
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
+    line-height: 140%;
     color: var(--navy-blue);
-    cursor: pointer;
 }
 
-.menu a:hover {
-    text-decoration: none;
+p {
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: var(--ocean);
-}
-
-address {
-    font-style: normal;
-    cursor: pointer;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--slate);
-}
-
-address li:hover {
-    color: var(--ocean);
-}
-
-address li:active {
-    font-weight: 400;
-}
-
-.team {
-    text-align: center;
-}
-
-.filter a {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-    cursor: pointer;
-}
-
-.filter a:hover,
-.filter a:active {
-    color: var(--iris);
-    text-decoration: none;
-}
-
-.li {
-    color: var(--slate);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
 }
 
 footer {
